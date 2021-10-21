@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Breed.module.scss'
 
 const Breed = ({ breed, index }) => {
@@ -10,7 +11,9 @@ const Breed = ({ breed, index }) => {
                 </div>
             </div>
             <div className={styles.breed_info}>
-                <h2>{index + 1}. {breed.name}</h2>
+                <Link href={`/breed/${breed.id}`}>
+                    <h2>{index + 1}. {breed.name}</h2>
+                </Link>
                 <p>{breed.description}</p>
             </div>
         </div>

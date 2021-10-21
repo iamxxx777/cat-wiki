@@ -20,6 +20,9 @@
             font-size: 22px;
             font-weight: 600;
             margin-bottom: 1rem;
+            cursor: pointer;
+            transition: 0.4s ease;
+            width: fit-content;
         }
         p {
             font-size: 15px;
@@ -62,6 +65,9 @@
             h2 {
                 font-size: 30px;
                 margin-bottom: 1.5rem;
+                &:hover {
+                    color: #2881da;
+                }
             }
             p {
                 font-size: 16px;

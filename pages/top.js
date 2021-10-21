@@ -1,12 +1,14 @@
 import axios from 'axios';
 import Breed from '../components/Breed'
+import Meta from '../components/Meta';
 import styles from "../styles/Top.module.scss";
 
 const Top = ({ breeds }) => {
     return (
         <section className={styles.viewed}>
+            <Meta title="Top 10 most searched cats | Catwiki" />
             <h1>Top 10 most searched breeds</h1>
-            {breeds.map((breed, i) => (<Breed breed={breed} index={i} />))}
+            {breeds.map((breed, i) => (<Breed breed={breed} key={i} index={i} />))}
         </section>
     )
 }

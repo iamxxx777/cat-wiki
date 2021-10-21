@@ -1,6 +1,7 @@
 import axios from "axios";
 import Stars from "../../components/Stars";
 import Images from "../../components/Images";
+import Meta from "../../components/Meta";
 
 import breedStyles from "../../styles/Breeds.module.scss";
 
@@ -10,10 +11,11 @@ const breed = ({ breed, other }) => {
    
     return (
         <section className={breedStyles.result}>
+            <Meta title={`${breedInfo.name} | Catwiki`} description={breedInfo.description.substring(0, 150)} />
             <div className={breedStyles.search_info}>
                 <div className={breedStyles.search_img}>
                     <div className={breedStyles.search_img_container}>
-                        <img src={breed.url} alt="cat photo" />
+                        <img src={breed.url} alt={`A cat of breed ${breedInfo.name}`} />
                     </div>
                 </div>
                 <div className={breedStyles.search_details}>

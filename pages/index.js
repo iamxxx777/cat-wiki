@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Head from 'next/head'
+import Meta from '../components/Meta'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -23,12 +23,7 @@ const Home = ({ images, data }) => {
     
     return (
         <div>
-          <Head>
-            <title>Cat Wiki</title>
-            <meta name="description" content="A wikipedia of cats, by cats, for cats" />
-            <link rel="icon" href="/favicon.ico" />
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
-          </Head>
+          <Meta />
 
           <section className={styles.jumbotron}  >
             <div className={styles.jumbo}>
