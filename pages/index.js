@@ -75,7 +75,7 @@ const Home = ({ images, data }) => {
                   <div className={styles.top_image}>
                     <div>
                       <Image 
-                        src={image.image.url} 
+                        src={image.image.url ? image.image.url : "/image 2.png"} 
                         alt={image.name} 
                         layout="fill" 
                         priority="true"
