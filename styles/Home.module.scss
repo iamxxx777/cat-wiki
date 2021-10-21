@@ -1,0 +1,405 @@
+.jumbotron {
+    width: 100%;
+    height: 380px;
+    padding: 0 1.5rem;
+    background: #C4C4C4;
+    border-radius: 42px 42px 0px 0px;
+    background-image: url("../public/HeroImagemd.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .jumbo {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .jumbo_logo {
+            margin-bottom: 1rem;
+            img {
+                width: 150px;
+                height: 50px;
+                margin-left: 0;
+            }
+        }
+        h3 {
+            font-style: normal;
+            font-weight: 500;
+            
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-bottom: 1.5rem;
+        }
+        form {
+            position: relative;
+            input {
+                width: 100%;
+                box-shadow: 0 1px 4px rgba(255,255,255,0.4),
+                                0 -1px 4px rgba(255,255,255,0.4);
+                border: none;
+                outline: none;
+                font-family: inherit;            
+                height: 45.67px;
+                border-radius: 25px;
+                font-size: 13px;
+                line-height: 18px;
+                padding-left: 15px;
+                padding-right: 40px;
+                &::placeholder {
+                    color: #291507;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                position: absolute;
+                color: #291507;
+                right: 15px;
+                top: 15px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Top Searched images
+
+.top_searched {
+    background-color: #E3E1DC;
+    padding: 2rem 1rem;
+    border-radius: 0px 0px 42px 42px;
+    .top_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+        h3 {
+            color: #291507;
+            margin-bottom: 0.4rem;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        .underline {
+            width: 40px;
+            height: 3.21px;
+            background-color: #4D270C;
+        }
+    }
+    .top_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2.5rem;
+        .info_left {
+            h2 {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 25px;
+            }
+        }
+        .info_right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            a {
+                color: rgba(41, 21, 7, 0.6);
+                text-align: right;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 14px;
+                &:hover {
+                    color: #291507;
+                }
+            }
+            h4 {
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .top_images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .top_image {
+            width: 100%;
+            cursor: pointer;
+            div {
+                width: 100%;
+                height: 140px;
+                position: relative;
+                transition: 0.4s linear;
+                margin-bottom: 0.7rem;
+                img {
+                    border-radius: 12px;
+                    object-fit: cover;
+                }
+            }
+            h4 {
+                color: #291507;
+                font-size: 12px;
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// Why you should own a cat
+
+
+.why {
+    width: 100%;
+    padding: 5rem 1rem;
+    .why_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        .why_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-right: 0.7rem;
+            width: 100%;          
+            h2 {
+                font-weight: 700;
+                text-transform: capitalize;
+                color: #291507;
+                margin-top: 1rem;
+                font-size: 35px;
+                line-height: 40px;
+                margin-bottom: 2rem;
+            }
+            p {
+                line-height: 22px;
+                font-size: 15px;
+                margin-bottom: 2rem;
+            }
+            a {
+                color: #7F736A;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover {
+                    color: #291507;
+                }
+            }
+        }
+        .why_images {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            .why_column {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                gap: 16px;
+                height: fit-content;
+                width: 100%;
+                img {
+                    border-radius: 24px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .why {
+        padding: 5rem 2rem;
+        .why_container {
+            .why_info {
+                h2 {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+                p {
+                    font-size: 15px;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 601px) {
+    .jumbotron {
+        height: 538px;
+        .jumbo {
+            max-width: 400px;
+            .jumbo_logo {
+                img {
+                    width: 260px;
+                    height: 85px;
+                }
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: 2.5rem;
+            }
+            form {
+                input {
+                    max-width: 394.62px;
+                    width: 100%;
+                    height: 69.67px;
+                    border-radius: 59px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                button {
+                    right: 25px;
+                    top: 25px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .top_searched {
+        padding: 2rem;
+        padding-bottom: 4rem;
+        .top_title {
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .underline {
+                width: 59px;
+                height: 3.21px;
+            }
+        }
+        .top_info {
+            .info_left {
+                h2 {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+            }
+            .info_right {
+                a {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+        .top_images {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            .top_image {
+                div {
+                    height: 180px;
+                }
+                h4 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+       
+}
+
+
+
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding: 0 2rem;
+        .jumbo {
+            form {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .top_searched {
+        padding: 2rem;
+        padding-bottom: 4rem;
+        .top_info {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin-bottom: 2.5rem;
+            .info_left {
+                h2 {
+                    font-size: 48px;
+                    line-height: 59px;
+                }
+            }
+        }
+        .top_images {
+            .top_image {
+                &:hover {
+                    div {
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+    }
+    .why {
+        .why_container {
+            grid-template-columns: 1fr 1fr;
+            .why_info {
+                h2 {
+                    font-size: 48px;
+                    line-height: 59px;
+                    margin-bottom: 3rem;    
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 3rem;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 950px) {
+    .jumbotron {
+        padding: 0 4rem;
+    }
+    .top_searched {
+        padding: 2rem 4rem;
+        padding-bottom: 4rem;
+        .top_images {
+            gap: 30px;
+            .top_image {
+                div {
+                    height: 200px;
+                    img {
+                        border-radius: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .why {
+       padding: 5rem 6rem;
+    }
+   
+}

@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        img {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.stars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    div {
+        border-radius: 8px;
+        height: 10px;
+        margin-top: 5px;
+        background-color: #E0E0E0;
+    }
+    .star {
+        background: #544439;
+    }
+}
+
+
+@media (min-width: 601px) {
+    .stars {
+        div {
+            height: 12px;
+        }
+    } 
+}
