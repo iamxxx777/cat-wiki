@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://screenbud.com/s/i8CupwI3IWc)
+![screenshot](https://res.cloudinary.com/iamxxx777/image/upload/v1634859232/Catwiki_alqngq.png)
 
 
 This app allows feline lovers to browse through over 60+ breeds of cats and get to know about their traits. This app helps those who are about to get a cat to know about the kind of breed they would prefer
