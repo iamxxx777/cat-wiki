@@ -18,7 +18,7 @@ const Footer = () => {
                 </Link>   
             </div>
             <div className={styles.author_info}>
-                <p>Created by <a href="https://github.com/iamxxx777">iamxxx777</a> - devChallenges.io 2021</p>
+                <p>Created by <a href="https://github.com/iamxxx777">Dayo-ajobiewe Hope</a> - devChallenges.io 2021</p>
             </div>
         </footer> 
     )
